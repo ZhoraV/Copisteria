@@ -10,7 +10,7 @@
             --naranja: #ff7f00;
             --blanco: #ffffff;
         }
-        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f0f7ff; margin: 0; padding: 20px; color: #333; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #096ad8; margin: 0; padding: 20px; color: #333; }
         .container { max-width: 600px; margin: auto; background: var(--blanco); border: 3px solid var(--azul-oscuro); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
         
         header { background-color: var(--azul-oscuro); color: white; padding: 20px; text-align: center; }
@@ -28,42 +28,56 @@
         .btn-contacto:hover { background-color: #e67300; }
         
         .footer { background: #f9f9f9; padding: 15px; text-align: center; font-size: 0.9em; }
+
+        .contenedor-header {
+    display: flex;            /* Mantiene el diseño flexible */
+    flex-direction: column;   /* Apila el logo y el texto verticalmente */
+    align-items: center;      /* Centra todo horizontalmente */
+    text-align: center;       /* Asegura que el texto esté centrado */
+    padding: 20px;            /* Espacio interno */
+    background-color: #004a99; /* Fondo azul para el encabezado */
+    color: white;             /* Color de letra blanco */
+}
+
+.logo {
+    width: 120px;             /* Ajusta el tamaño para que se vea bien */
+    margin-bottom: 10px;      /* Espacio entre el logo y el texto */
+}
+
+.texto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
     </style>
 </head>
 <body>
 
 <div class="container">
-    <header>
-        <h1>COPY MAX</h1>
-        <p>¡Tu solución en la UPTP!</p>
-    </header>
+    <div class="contenedor-header">
+    <img src="Logo Copy Max.png" alt="Logo Copy Max" class="logo">
+        <div class="texto-container">
+            <h1 style="margin: 0;">COPY MAX</h1>
+            <p style="margin: 5px 0 0; color: #ff7f00; font-weight: bold;">¡Tu solución en la UPTP!</p>
+        </div>
+    </div>
 
     <div class="seccion">
         <h2> Servicios Principales</h2>
         <ul class="lista-servicios">
-            <li>Fotocopias a color y B/N (A4, A3, Oficio)</li>
-            <li>Impresiones Rápidas (USB, Email)</li>
-            <li>Encuadernaciones (Anillado y Espiral)</li>
-            <li>Laminados de Documentos</li>
-        </ul>
-    </div>
-
-    <div class="seccion">
-        <h2> Soluciones Universitarias</h2>
-        <ul class="lista-servicios">
-            <li>Guías de Estudio y Material Académico</li>
-            <li>Tesis y Proyectos de Grado</li>
-            <li>Trámites UPTP (Formularios, Certificados)</li>
-            <li>Impresión de Planillas</li>
-        </ul>
-    </div>
-
-    <div class="seccion">
-        <h2> Papelería y Útiles</h2>
-        <ul class="lista-servicios">
-            <li>Cuadernos, Hojas, Bolígrafos, Lápices</li>
-            <li>Carpetas, Resaltadores, Útiles Escolares</li>
-            <li>Cartulinas, Pegamento, Material de Oficina</li>
+            <li>Trámites Saime.</li>
+            <li>Trámites Seniat(RIF).</li>
+            <li>Trámites Saren (Partidas de Nacimiento).</li>
+            <li>Trabajos, Informes, Trípticos, Dípticos, Ensayos.</li>
+            <li>Trámites bancarios (Apertura de Cuentas, Desbloqueo, Actualización).</li>
+            <li>Síntesis Curricular.</li>
+            <li>Fotocopias, Impresiones, Transcripciones.</li>
+            <li>Carnet Estudiantil.</li>
+            <li>Flyers Publicitarios.</li>
+            <li>Logos y Marcas.</li>
+            <li>Referencias Personales.</li>
+            <li>Constancias de Trabajos.</li>
+            <li>Fichas Médicas.</li>
         </ul>
     </div>
 
