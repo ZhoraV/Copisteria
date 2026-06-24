@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Max - Tu solución en la UPTP</title>
+    <style>
+        :root {
+            --azul-oscuro: #004a99;
+            --naranja: #ff7f00;
+            --blanco: #ffffff;
+        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f0f7ff; margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 600px; margin: auto; background: var(--blanco); border: 3px solid var(--azul-oscuro); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+        
+        header { background-color: var(--azul-oscuro); color: white; padding: 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 2em; }
+        header p { margin: 5px 0 0; font-weight: bold; color: var(--naranja); }
+
+        .seccion { padding: 20px; border-bottom: 2px solid #eee; }
+        h2 { color: var(--azul-oscuro); margin-top: 0; display: flex; align-items: center; }
+        
+        .lista-servicios { list-style: none; padding: 0; }
+        .lista-servicios li { margin-bottom: 8px; padding-left: 20px; position: relative; }
+        .lista-servicios li::before { content: "➔"; color: var(--naranja); position: absolute; left: 0; }
+
+        .btn-contacto { display: block; background-color: var(--naranja); color: white; text-align: center; padding: 20px; text-decoration: none; font-weight: bold; font-size: 1.2em; transition: 0.3s; }
+        .btn-contacto:hover { background-color: #e67300; }
+        
+        .footer { background: #f9f9f9; padding: 15px; text-align: center; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>COPY MAX</h1>
+        <p>¡Tu solución en la UPTP!</p>
+    </header>
+
+    <div class="seccion">
+        <h2> Servicios Principales</h2>
+        <ul class="lista-servicios">
+            <li>Fotocopias a color y B/N (A4, A3, Oficio)</li>
+            <li>Impresiones Rápidas (USB, Email)</li>
+            <li>Encuadernaciones (Anillado y Espiral)</li>
+            <li>Laminados de Documentos</li>
+        </ul>
+    </div>
+
+    <div class="seccion">
+        <h2> Soluciones Universitarias</h2>
+        <ul class="lista-servicios">
+            <li>Guías de Estudio y Material Académico</li>
+            <li>Tesis y Proyectos de Grado</li>
+            <li>Trámites UPTP (Formularios, Certificados)</li>
+            <li>Impresión de Planillas</li>
+        </ul>
+    </div>
+
+    <div class="seccion">
+        <h2> Papelería y Útiles</h2>
+        <ul class="lista-servicios">
+            <li>Cuadernos, Hojas, Bolígrafos, Lápices</li>
+            <li>Carpetas, Resaltadores, Útiles Escolares</li>
+            <li>Cartulinas, Pegamento, Material de Oficina</li>
+        </ul>
+    </div>
+
+    <a href="https://wa.me/584145257040?text=Hola,%20vengo%20de%20su%20página%20web%20y%20necesito%20un%20servicio%20de%20Copy%20Max." class="btn-contacto">
+         ¡CONTACTAR POR WHATSAPP!
+    </a>
+
+    <div class="footer">
+         Ubicación: UPTP "Juan de Jesús Montilla"<br>
+        ¡No pierdas tiempo! Estamos cerca de ti.
+    </div>
+</div>
+
+</body>
+</html>
