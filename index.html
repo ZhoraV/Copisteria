@@ -10,102 +10,193 @@
             --naranja: #ff7f00;
             --blanco: #ffffff;
         }
-body {
-    /* Aquí indicas la imagen */
-    background-image: url('Fondo Copy Max.png'); 
     
-    background-size: cover; 
+        body {
+            background-image: url('Fondo Copy Max.png');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-color: #004a99;
+            margin: 0;
+            padding: 20px;
+        }
     
-    background-attachment: fixed; 
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: var(--blanco);
+            border: 3px solid var(--azul-oscuro);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
     
-    background-position: center; 
+        header {
+            background-color: var(--azul-oscuro);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
     
-    background-color: #004a99; 
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
     
-    margin: 0;
-    padding: 20px;
-}
-
-        .container { max-width: 600px; margin: auto; background: var(--blanco); border: 3px solid var(--azul-oscuro); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
-        
-        header { background-color: var(--azul-oscuro); color: white; padding: 20px; text-align: center; }
-        header h1 { margin: 0; font-size: 2em; }
-        header p { margin: 5px 0 0; font-weight: bold; color: var(--naranja); }
-
-        .seccion { padding: 20px; border-bottom: 2px solid #eee; }
-        h2 { color: var(--azul-oscuro); margin-top: 0; display: flex; align-items: center; }
-        
-        .lista-servicios { list-style: none; padding: 0; }
-        .lista-servicios li { margin-bottom: 8px; padding-left: 20px; position: relative; }
-        .lista-servicios li::before { content: "➔"; color: var(--naranja); position: absolute; left: 0; }
-
-        .btn-contacto { display: block; background-color: var(--naranja); color: white; text-align: center; padding: 20px; text-decoration: none; font-weight: bold; font-size: 1.2em; transition: 0.3s; }
-        .btn-contacto:hover { background-color: #e67300; }
-        
-        .footer { background: #f9f9f9; padding: 15px; text-align: center; font-size: 0.9em; }
-
+        header p {
+            margin: 5px 0 0;
+            font-weight: bold;
+            color: var(--naranja);
+        }
+    
+        .seccion {
+            padding: 20px;
+            border-bottom: 2px solid #eee;
+        }
+    
+        h2 {
+            color: var(--azul-oscuro);
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+    
+        .lista-servicios {
+            list-style: none;
+            padding: 0;
+        }
+    
+        .lista-servicios li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+    
+        .lista-servicios li::before {
+            content: "➔";
+            color: var(--naranja);
+            position: absolute;
+            left: 0;
+        }
+    
+        .btn-contacto {
+            display: block;
+            background-color: var(--naranja);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: 0.3s;
+            border-radius: 20px;
+        }
+    
+        .btn-contacto:hover {
+            background-color: #e67300;
+        }
+    
+        .footer {
+            background: #f9f9f9;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    
         .contenedor-header {
-    display: flex;            /* Mantiene el diseño flexible */
-    flex-direction: column;   /* Apila el logo y el texto verticalmente */
-    align-items: center;      /* Centra todo horizontalmente */
-    text-align: center;       /* Asegura que el texto esté centrado */
-    padding: 20px;            /* Espacio interno */
-    background-color: #0a66c7; /* Fondo azul para el encabezado */
-    color: white;             /* Color de letra blanco */
-}
+            display: flex;
 
-.logo {
-    width: 120px;             /* Ajusta el tamaño para que se vea bien */
-    margin-bottom: 10px;      /* Espacio entre el logo y el texto */
-}
+            flex-direction: column;
 
-.texto-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+            align-items: center;
+
+            text-align: center;
+
+            padding: 20px;
+
+            background-color: #0a66c7;
+
+            color: white;
+
+        }
+    
+        .logo {
+            width: 120px;
+
+            margin-bottom: 10px;
+
+        }
+    
+        .texto-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .btn-precios {
+            display: block;
+            background-color: var(--naranja);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: 0.3s;
+            margin-bottom: 20px;
+            border-radius: 20px;
+        }
+    
+        .btn-precios:hover {
+            background-color: #e67300;
+        }
     </style>
-</head>
-<body>
-
-<div class="container">
-    <div class="contenedor-header">
-    <img src="Logo Copy Max.png" alt="Logo Copy Max" class="logo">
-        <div class="texto-container">
-            <h1 style="margin: 0;">COPY MAX</h1>
-            <p style="margin: 5px 0 0; color: #ff7f00; font-weight: bold;">¡Tu solución en la UPTP!</p>
+    </head>
+    
+    <body>
+    
+        <div class="container">
+            <div class="contenedor-header">
+                <img src="Logo Copy Max.png" alt="Logo Copy Max" class="logo">
+                <div class="texto-container">
+                    <h1 style="margin: 0;">COPY MAX</h1>
+                    <p style="margin: 5px 0 0; color: #ff7f00; font-weight: bold;">¡Tu solución en la UPTP!</p>
+                </div>
+            </div>
+    
+            <div class="seccion">
+                <h2> Servicios Principales</h2>
+                <ul class="lista-servicios">
+                    <li>Trámites Saime.</li>
+                    <li>Trámites Seniat(RIF).</li>
+                    <li>Trámites Saren (Partidas de Nacimiento).</li>
+                    <li>Trabajos, Informes, Trípticos, Dípticos, Ensayos.</li>
+                    <li>Trámites bancarios (Apertura de Cuentas, Desbloqueo, Actualización).</li>
+                    <li>Síntesis Curricular.</li>
+                    <li>Fotocopias, Impresiones, Transcripciones.</li>
+                    <li>Carnet Estudiantil.</li>
+                    <li>Flyers Publicitarios.</li>
+                    <li>Logos y Marcas.</li>
+                    <li>Referencias Personales.</li>
+                    <li>Constancias de Trabajos.</li>
+                    <li>Fichas Médicas.</li>
+                    <li>Papeleria.</li>
+                </ul>
+            </div>
+            <a href="precios.html" class="btn-precios">
+                ¡VER PRECIOS!
+            </a>
+            <a href="https://wa.me/584145257040?text=Hola,%20vengo%20de%20su%20página%20web%20y%20necesito%20un%20servicio%20de%20Copy%20Max."
+                class="btn-contacto">
+                ¡CONTACTAR POR WHATSAPP!
+            </a>
+    
+            <div class="footer">
+                Ubicación: UPTP "Juan de Jesús Montilla"<br>
+                ¡No pierdas tiempo! Estamos cerca de ti.
+            </div>
         </div>
-    </div>
-
-    <div class="seccion">
-        <h2> Servicios Principales</h2>
-        <ul class="lista-servicios">
-            <li>Trámites Saime.</li>
-            <li>Trámites Seniat(RIF).</li>
-            <li>Trámites Saren (Partidas de Nacimiento).</li>
-            <li>Trabajos, Informes, Trípticos, Dípticos, Ensayos.</li>
-            <li>Trámites bancarios (Apertura de Cuentas, Desbloqueo, Actualización).</li>
-            <li>Síntesis Curricular.</li>
-            <li>Fotocopias, Impresiones, Transcripciones.</li>
-            <li>Carnet Estudiantil.</li>
-            <li>Flyers Publicitarios.</li>
-            <li>Logos y Marcas.</li>
-            <li>Referencias Personales.</li>
-            <li>Constancias de Trabajos.</li>
-            <li>Fichas Médicas.</li>
-            <li>Papeleria.</li>
-        </ul>
-    </div>
-
-    <a href="https://wa.me/584145257040?text=Hola,%20vengo%20de%20su%20página%20web%20y%20necesito%20un%20servicio%20de%20Copy%20Max." class="btn-contacto">
-         ¡CONTACTAR POR WHATSAPP!
-    </a>
-
-    <div class="footer">
-         Ubicación: UPTP "Juan de Jesús Montilla"<br>
-        ¡No pierdas tiempo! Estamos cerca de ti.
-    </div>
-</div>
-
-</body>
-</html>
+    
+    </body>
+    
+    </html>
